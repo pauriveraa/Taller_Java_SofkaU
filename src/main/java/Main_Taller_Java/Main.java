@@ -3,6 +3,9 @@ import java.util.Scanner;
 
 import static Cadenas_De_Texto.Dia_Laboral.laboral;
 import static Cadenas_De_Texto.Eliminar_Espacios.elimina_espacios;
+import static Cadenas_De_Texto.Fecha_Actualizada.fecha;
+import static Cadenas_De_Texto.Longitud_Frase.long_frase;
+import static Cadenas_De_Texto.Palabras_Iguales.iguales;
 import static Cadenas_De_Texto.Reemplazar_Caracter.reemplaza;
 import static Matematicos.Area_Circulo.area_circulo;
 import static Matematicos.Numero_MMI.mayor;
@@ -10,6 +13,7 @@ import static Matematicos.Numero_Mayor.numero_mayor;
 import static Matematicos.Numero_Mayor_Que_Cero.mayor_que_cero;
 import static Matematicos.Pares_Impares.par_impar;
 import static Matematicos.Pares_Impares_F.par_impar_f;
+import static Matematicos.Pasos_De_Dos.pasos;
 import static Matematicos.Precio_Con_Iva.precio_final;
 
 public class Main {
@@ -27,6 +31,14 @@ public class Main {
         System.out.println("8. Verifica si un día de la semana es laboral o no.");
         System.out.println("9. Reemplaza la vocal (a) por (e).");
         System.out.println("10. Elimina espacios entre palabras.");
+        System.out.println("11. Determinar longitud de una frase y cantidad de vocales en esta.");
+        System.out.println("12. Diferencias entre dos palabras po frases.");
+        System.out.println("13. Consulta fecha y hora actual.");
+        System.out.println("14. Ingrese número para imprimir con saltos de 2 en dos hasta llegar a 1000");
+        System.out.println("15. ");
+        System.out.println("16. ");
+        System.out.println("17. ");
+        System.out.println("18. ");
         Scanner menu = new Scanner(System.in);
         int respuesta = menu.nextInt();
 
@@ -73,6 +85,34 @@ public class Main {
             case 10:{
                 elimina_espacios();
                 break;
+            }
+            case 11:{
+                long_frase();
+                break;
+            }
+            case 12:{
+                iguales();
+                break;
+            }
+            case 13:{
+                fecha();
+                break;
+            }
+            case 14:{
+                pasos();
+                break;
+            }
+            case 15:{
+
+            }
+            case 16:{
+
+            }
+            case 17:{
+
+            }
+            case 18:{
+
             }
             default:{
                 System.out.println("No ingresó una opción correcta.");
