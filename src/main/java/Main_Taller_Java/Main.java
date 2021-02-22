@@ -38,9 +38,6 @@ public class Main {
             System.out.println("13. Consulta fecha y hora actual.");
             System.out.println("14. Ingrese número para imprimir con saltos de 2 en dos hasta llegar a 1000");
             System.out.println("15. Mostrar menú Gestión cinematográfica.");
-            System.out.println("16. ");
-            System.out.println("17. Electrodomésticos.");
-            System.out.println("18. Videojuegos y series");
             Scanner menu = new Scanner(System.in);
             int respuesta = menu.nextInt();
 
@@ -123,16 +120,6 @@ public class Main {
                     cinematografico();
                     opcion = true;
                     break;
-                }
-                case 16:{
-                    opcion = true;
-
-                }
-                case 17:{
-                    opcion = true;
-                }
-                case 18:{
-                    opcion = true;
                 }
                 default:{
                     System.out.println("No ingresó una opción correcta.");
